@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme{
+    --color-primery:#042352;
+    --color-secendery:#F45E0C;
+    --color-primery500:#063A88;
+    --color-neutralgray:#717171;
+    --color-neutrallightgray:#CBCBCB;
+
+}
+@utility container{
+ margin:0 auto; ;
+}
