@@ -1,5 +1,4 @@
-import '../output.css'
-import '../input.css'
+
 
 function HeaderContent() {
   

@@ -1,12 +1,10 @@
-import '../output.css'
-import '../input.css'
 
 function Header() {
   
 
   return (
     <>
-       <section className="container  flex justify-between items-center  ">
+       <section className="container flex justify-between items-center  ">
             <img src="/images/icons/logo.svg" alt=""/>
             <nav className=" flex gap-12">
                 <a>Home</a>
