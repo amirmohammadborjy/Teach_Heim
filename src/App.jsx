@@ -11,6 +11,7 @@ import Poster from './component/poster.jsx'
 import Blogs from './component/blogs.jsx'
 import Footer from './component/footer.jsx'
 import categorydata from'./data.js'
+import { useEffect, useState } from 'react'
 //import baneritems from'./data.js'
 
 
@@ -39,16 +40,31 @@ let carditems2=[
 ]
 
 
-
 function App() {
-  
-
+  const [categorydata1,setCategorydata]=useState([]);
+  useEffect(()=>{
+    setCategorydata(categorydata);
+  },[])
+  //
+  const [banerdata,setBanerdata]=useState([]);
+  useEffect(()=>{
+    setBanerdata(baneritems);
+  },[])
+  //
+  const [cardrdata1,setCardrdata1]=useState([]);
+  useEffect(()=>{
+    setCardrdata1(carditems1);
+  },[])
+  const [cardrdata2,setCardrdata2]=useState([]);
+  useEffect(()=>{
+    setCardrdata2(carditems2);
+  },[])
   return (
     <>
       <Header />
     <HeaderContent/>
     <section className="container flex justify-center items-center gap-7  ">
-      {categorydata.map((item , index) => (
+      {categorydata1.map((item , index) => (
         <Category
         key={index}
         title={item.title}
@@ -73,7 +89,7 @@ function App() {
               
 
             </div>
-      {baneritems.map((item,index)=>(
+      {banerdata.map((item,index)=>(
       <Baner
       
       key={index}
@@ -112,7 +128,7 @@ function App() {
                
                 
                 
-                 {carditems1.map((item,index)=>(
+                 {cardrdata1.map((item,index)=>(
       <CardsModel1
         key={index}
         title={item.title}
@@ -142,7 +158,7 @@ function App() {
             </div>
                 <span className="h-0.5 bg-black w-full  block"></span>
             <div className="flex justify-between items-center gap-5">
-            {carditems2.map((item,index)=>(
+            {cardrdata2.map((item,index)=>(
               <CardsModel2
               key={index}
               title={item.title}
