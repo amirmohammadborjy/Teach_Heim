@@ -12,6 +12,7 @@ import Blogs from './component/blogs.jsx'
 import Footer from './component/footer.jsx'
 import categorydata from'./data.js'
 import { useEffect, useState } from 'react'
+import axios from 'axios';
 //import baneritems from'./data.js'
 
 
@@ -42,22 +43,50 @@ let carditems2=[
 
 function App() {
   const [categorydata1,setCategorydata]=useState([]);
+  
   useEffect(()=>{
-    setCategorydata(categorydata);
+    axios.get('https:8000/api/banneritems')
+    .then(response=>{
+      setCategorydata(response.data)
+    }).catch(error=>{
+      console.log(error);
+      setCategorydata(categorydata);
+    });
   },[])
-  //
+
   const [banerdata,setBanerdata]=useState([]);
-  useEffect(()=>{
-    setBanerdata(baneritems);
-  },[])
-  //
+  useEffect(() => {
+    axios.get('https:8000/api/banneritems') 
+      .then(response => {
+        setBanerdata(response.data);
+      })
+      .catch(error => {
+        setBanerdata(baneritems);
+        console.error(error);
+        
+      });
+  }, []);
+
+  
+
   const [cardrdata1,setCardrdata1]=useState([]);
   useEffect(()=>{
-    setCardrdata1(carditems1);
+    axios.get("https:8000/api/banneritems").then(response=>{
+      setCardrdata1(response.data);
+    }).catch(error=>{
+      setCardrdata1(carditems1);
+      console.log(error);
+      
+    })
   },[])
   const [cardrdata2,setCardrdata2]=useState([]);
   useEffect(()=>{
-    setCardrdata2(carditems2);
+    axios.get("https:8000/api/banneritems").then(response=>{
+      setCardrdata2(response.data);
+    }).catch(error=>{
+      setCardrdata2(carditems2);
+      console.log(error);
+    })
   },[])
   return (
     <>
