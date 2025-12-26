@@ -10,10 +10,10 @@ function HeaderContent() {
                 <h1 className="text-6xl font-bold text-primery">
                     Tech Heim
                 </h1>
-                <div className="flex gap-2 mt-10">
-                    <p className="text-3xl text-primery ">"Join the </p>
-                    <p className="text-3xl text-secendery">     digital revolution"</p>
-                </div>
+                <p className="text-2xl font-bold mt-10">
+              <span className="text-blue-900">Join the </span>
+              <span className="text-orange-500">digital revolution</span>
+                </p>
                 <button className="w-72 h-14 bg-secendery text-white rounded-2xl mt-20 cursor-pointer">
                     Explore More
                 </button>

@@ -2,6 +2,8 @@
 @utility container{
  margin:0 auto; 
  padding: 30px;
+ padding-left:108px;
+ padding-right: 108px;
 }
 @theme{
     --color-primery:#042352;

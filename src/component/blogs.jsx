@@ -5,8 +5,8 @@ function Blogs() {
 
   return (
     <>
-       <div>
-        <section className="container">
+       <div  className="container">
+        
             <div className="flex justify-between mt-12 mb-4 ">
                 <h3 className="font-bold text-3xl">Our Blogs</h3>
                 <div className="flex items-center mr-6">
@@ -41,8 +41,8 @@ function Blogs() {
                             8 Things You Probably Didn’t Know About Headphones
                         </h6>
                         <p className="text-sm text-[#717171]">Owning a headphone could mean a different thing for different people. For some, it act as a fashion statement. It’s easy to spot these people, the headphone are almost</p>
-                        <div className=" flex justify-between items-center pr-5">
-                            <div className="flex items-center">
+                        <div className=" flex justify-between items-center  pr-5">
+                            <div className="flex items-center gap-2">
                                 <img src="/images/icons/calendar.svg" alt=""/>
                                 <p className="text-[#9E9E9E]">March , 28 , 2023</p>
                             </div>
@@ -62,7 +62,7 @@ function Blogs() {
                         </h6>
                         <p className="text-sm text-[#717171]">On August 17th at 9:30PM UTC, Bitcoin’s price dropped more than 8% in a 10-minute window, to a two-month low of under $26k. This pulled</p>
                         <div className=" flex justify-between items-center pr-5">
-                            <div className="flex items-center">
+                            <div className="flex items-center gap-2">
                                 <img src="/images/icons/calendar.svg" alt=""/>
                                 <p className="text-[#9E9E9E]">August , 17 , 2023</p>
                             </div>
@@ -73,7 +73,7 @@ function Blogs() {
                     </div>
                 </div>
             </div>
-        </section>
+        
     </div>
     </>
   )

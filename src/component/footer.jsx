@@ -48,8 +48,8 @@ function Footer() {
                 <div className="flex gap-11">
                  
                     <div className="text-white flex flex-col gap-4">
-                    <a href="">Sign up for News and updates</a>
-                    <div className="border-2 border-white border-solid rounded-xl h-12 w-72 flex justify-between p-3">
+                    <h6>Sign up for News and updates</h6>
+                    <div className="border-2 cursor-pointer border-white border-solid rounded-xl h-12 w-72 flex justify-between p-3">
                         <div className=" flex items-center ">
                             <img src="/images/icons/userwithe.svg" alt=""/>
                             <p>E-mail Address</p>
@@ -57,7 +57,7 @@ function Footer() {
                         <img src="/images/icons/arrow-right-larg.svg " alt=""/>
 
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 cursor-pointer">
                         <img src="/images/icons/Facebook.svg" alt=""/>
                         <img src="/images/icons/twitter.svg" alt=""/>
                         <img src="/images/icons/Instagram.svg" alt=""/>
@@ -69,7 +69,7 @@ function Footer() {
                         <img src="/images/icons/message-question.svg" alt=""/>
                     </div>
                     <div className="h-10 w-10 bg-[#AECDFB] rounded-[40px] flex justify-center items-center ">
-                        <img src="/mages/icons/arrow-circle-up.svg" alt=""/>
+                        <img src="/images/icons/arrow-circle-up.svg" alt=""/>
                     </div>
                 </div>
                 </div>
@@ -80,7 +80,7 @@ function Footer() {
             </div>
 
 
-            <div class="w-full bg-[#021736] h-14">
+            <div class="w-full bg-[#021736] h-16">
                 <div class="p-5 flex justify-between">
                     <div class="flex items-center justify-center gap-2 ">
                         <img src="/images/icons/copyright.svg" alt=""/>
